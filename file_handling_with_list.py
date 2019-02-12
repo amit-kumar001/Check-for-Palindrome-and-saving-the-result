@@ -1,38 +1,32 @@
-# def check(p):
-#     return p[::-1]
-# def same(p):
-#     rev=reversed(p)
-#     if p==rev:
-#         return p
-#     return rev
-# p="wewew"
-# ans=p
-# if ans==rev:
-#     print("codition 1")
-# else:
-#     print("condition2")
+value = ['wewe','aa','abcd','121','111']
+empty_list = [] #empty list
+empty_list_2 =[]#empty list
+for i in value:
+    rev_string = i[::-1] #operation for reverses the string.
+    try:
+        if i == rev_string:
+            print("Successful is operation")
+            empty_list.append(rev_string) # append() method takes every single item and adds it in the empty list
+        else:
+            raise Exception("Raise error")#raise an exception so that it can later be caught via an except block
 
-# value = ['wewew']
-# #value = value.casefold()
-# rev_list = reversed(value)
-# if list(value) == list(rev_list):
-#
-#     print("It is palindrome",value)
-# else:
-#     print("It is not palindrome",rev_list)
+    except Exception as e: 
+        print(e)
+        empty_list_2.append(i)
+print("Please see the value in list which are palindrome:",empty_list)
+print("Please see the value in list which are not palindrome:",empty_list_2)
 
 
-value = ['wewew','aa']
-#value = value.casefold()
-rev_list = reversed(value)
-if list(value) == list(rev_list):
-    a =("It is palindrome", value)
-    file=open("sample.txt","w")`
-    for i in a:
-        print(i)
-        file.write("result is %s\n" %i)
-    file.close()
-# else:
-#     print("It is not palindrome",rev_list)
+#####Storing the result in the file#########
+
+with open('palindrome.txt','w+') as f:# create file to store result
+    for i in empty_list:
+        f.write('%s\n' %i)# %s- for string, %i - store value of i
+    f.close()
+
+with open('palindrome_not.txt','w+') as f:
+    for i in empty_list_2:
+        f.write('%s\n' %i)
+    f.close()
 
 
