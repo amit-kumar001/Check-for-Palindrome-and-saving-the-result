@@ -9,7 +9,11 @@
     </ol>
  
  ## Coding
- ## To check palindrome items
+ ## To check palindrome items  
+ 
+ Please have the look at the below image  
+ 
+![check-value-palindrome500x300new](https://user-images.githubusercontent.com/47202519/52693554-ff7fc000-2f8c-11e9-9a7b-510d4b285bfe.jpg)
  
  ```
 value = ['wewe','aa','abcd','121','111']
