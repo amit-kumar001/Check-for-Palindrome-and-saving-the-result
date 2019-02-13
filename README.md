@@ -1,4 +1,4 @@
-## Check_value_is_palindrome_or_not_and_store_result_in_file  
+## Check for Palindrome and saving the result  
 ## Key feature
 <ol>
 <li> Define list with it's items, every item in the list is checked for the condtion (<strong>palindrome or not</strong>)</li>
